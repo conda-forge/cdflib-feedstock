@@ -1,5 +1,5 @@
 {% set name = "cdflib" %}
-{% set version = "0.3.18" %}
+{% set version = "0.3.19" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 8249fd28653b40a9241e3cebe38e82bff11bda2e2167971d039d6f76024243aa
+  sha256: 07286f06e9e590425d65037d134afffa2706871ba256ca7fcee57050cefa18e4
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -32,9 +32,9 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary:  'A python CDF reader toolkit'
+  summary: A python CDF reader toolkit
   description: |
-     A python CDF reader toolkit
+    A python CDF reader toolkit
   doc_url: https://cdflib.readthedocs.io/en/latest/
   dev_url: https://github.com/MAVENSDC/cdflib
 
