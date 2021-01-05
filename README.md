@@ -5,9 +5,13 @@ Home: https://github.com/MAVENSDC/cdflib
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/cdflib-feedstock/blob/master/LICENSE.txt)
 
 Summary: A python CDF reader toolkit
+
+Development: https://github.com/MAVENSDC/cdflib
+
+Documentation: https://cdflib.readthedocs.io/en/latest/
 
 A python CDF reader toolkit
 
