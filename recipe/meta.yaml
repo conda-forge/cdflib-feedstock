@@ -20,12 +20,17 @@ requirements:
     - pip
     - twine >=1.11
   run:
+    - astropy
     - python >=3.5
     - numpy
+    - xarray
 
 test:
   imports:
     - cdflib
+  requires:
+    - astropy
+    - xarray
 
 about:
   home: https://github.com/MAVENSDC/cdflib
