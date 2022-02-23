@@ -1,5 +1,5 @@
 {% set name = "cdflib" %}
-{% set version = "0.3.20" %}
+{% set version = "0.4.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 7b1119ee1c1ba2ca5fe5e5c4f823ddc2dadad77e4aa04211907d111204176392
+  sha256: f239c209bf6b2c25971d44340bc65f0aba8ddc44085e7c7c614812936d61e259
 
 build:
   noarch: python
@@ -20,12 +20,17 @@ requirements:
     - pip
     - twine >=1.11
   run:
+    - astropy
     - python >=3.5
     - numpy
+    - xarray
 
 test:
   imports:
     - cdflib
+  requires:
+    - astropy
+    - xarray
 
 about:
   home: https://github.com/MAVENSDC/cdflib
