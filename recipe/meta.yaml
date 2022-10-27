@@ -21,6 +21,7 @@ requirements:
     - twine >=1.11
   run:
     - astropy
+    - attrs >=19.2.0
     - python >=3.5
     - numpy
     - xarray
@@ -28,6 +29,8 @@ requirements:
 test:
   imports:
     - cdflib
+  commands:
+    - pip check
   requires:
     - astropy
     - xarray
