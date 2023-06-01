@@ -1,5 +1,5 @@
 {% set name = "cdflib" %}
-{% set version = "0.4.9" %}
+{% set version = "1.0.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 665d2ab31fcf7b61dec230fbc390d87e02116993dc434c3112921f967012b963
+  sha256: becc5abe77f537c9f6fb9e4dc3a424bfefa1229ae9f978e486c6016dc143616e
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
