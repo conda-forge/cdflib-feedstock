@@ -151,5 +151,4 @@ Feedstock Maintainers
 =====================
 
 * [@Alexs12](https://github.com/Alexs12/)
-* [@dstansby](https://github.com/dstansby/)
 
