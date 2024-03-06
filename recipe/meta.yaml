@@ -1,5 +1,5 @@
 {% set name = "cdflib" %}
-{% set version = "1.2.4" %}
+{% set version = "1.2.6" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: e1288ace2192eb9c5110d332c1e8ce7e8d86004218ef7a609aaf12f1d0d423cc
+  sha256: 4427bc8b2fbcdebbe7fb29358319204033c16ec04fc4cf9a38f5635436c71bfe
 
 
 build:
