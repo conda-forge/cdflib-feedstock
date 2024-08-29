@@ -151,4 +151,5 @@ Feedstock Maintainers
 =====================
 
 * [@Alexs12](https://github.com/Alexs12/)
+* [@Cadair](https://github.com/Cadair/)
 
