@@ -13,18 +13,18 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python >=3.5
+    - python >=3.8
     - pip
-    - twine >=1.11
+    - setuptools_scm
   run:
+    - python >=3.8
+    - numpy >=1.21
     - astropy
-    - python >=3.5
-    - numpy
     - xarray
 
 test:
